@@ -11,6 +11,22 @@
     <link rel="icon" href="favicon-16x16.png" type="image/x-icon">
     <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+
         .video-button {
             text-align: center;
             margin-top: 20px;
@@ -37,7 +53,7 @@
         .video-container {
             position: relative;
             width: 70%;
-            padding-bottom: 30%; 
+            padding-bottom: 30%;
             height: 0;
             margin: 0 auto;
             overflow: hidden;
@@ -66,42 +82,44 @@
     </style>
 </head>
 <body>
-    <header class="site-header">
-        <div class="nav-container">
-            <img src="ламбуизм титут.jpg" alt="Логотип Ламбумиз" class="header-logo">
-            <nav class="main-nav">
-                <a href="index.html">О компании</a>
-                <a href="news.html">Новости</a>
-                <a href="course.html">Курс валют</a>
-                <a href="contacts.html">Контактные данные</a>
-                <a href="video.html" class="active">Видео</a>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section class="video">
-            <h1 style="text-align: center;">Видео о компании «Ламбумиз»</h1>
-            <div class="video-container">
-                <iframe 
-                    src="https://www.youtube.com/embed/65WVIm_kGUE" 
-                    title="ПАО «Ламбумиз» — Видео" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
+    <div class="wrapper">
+        <header class="site-header">
+            <div class="nav-container">
+                <img src="ламбуизм титут.jpg" alt="Логотип Ламбумиз" class="header-logo">
+                <nav class="main-nav">
+                    <a href="index.html">О компании</a>
+                    <a href="news.html">Новости</a>
+                    <a href="course.html">Курс валют</a>
+                    <a href="contacts.html">Контактные данные</a>
+                    <a href="video.html" class="active">Видео</a>
+                </nav>
             </div>
+        </header>
 
-            <div class="video-button">
-                <a href="https://youtu.be/65WVIm_kGUE" target="_blank" class="btn-watch">
-                    Смотреть на YouTube
-                </a>
-            </div>
-        </section>
-    </main>
+        <main>
+            <section class="video">
+                <h1 style="text-align: center;">Видео о компании «Ламбумиз»</h1>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/65WVIm_kGUE" 
+                        title="ПАО «Ламбумиз» — Видео" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
 
-    <footer class="footer">
-        &copy; Ангелина Кузнецова, ФБИ-33, 2 курс, 2025
-    </footer>
+                <div class="video-button">
+                    <a href="https://youtu.be/65WVIm_kGUE" target="_blank" class="btn-watch">
+                        Смотреть на YouTube
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            &copy; Ангелина Кузнецова, ФБИ-33, 2 курс, 2025
+        </footer>
+    </div>
 </body>
 </html>
